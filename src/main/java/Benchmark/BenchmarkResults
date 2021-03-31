@@ -1,0 +1,43 @@
+Configuration:
+RUN_MILLIS = 4000
+REPEAT = 15
+WARMUP = 20
+LOOP = 10_000
+
+Benchmark for:
+[#1] Running: FactoryMethod; Score: 0.282540232
+[#2] Running: AbstractFactory; Score: 0.275757051
+[#3] Running: SimpleFactory; Score: 0.181103997
+[#4] Running: NonReflectionFactory; Score: 0.141512372
+[#5] Running: ReflectionFactory; Score: 0.119086347
+
+Results:
+[#1] Running: FactoryMethod
+7065 ops/ms (warmup) | 7990 ops/ms (warmup) | 7497 ops/ms (warmup) | 8292 ops/ms (warmup) | 8317 ops/ms (warmup) | 8305 ops/ms (warmup) | 7972 ops/ms (warmup) | 7145 ops/ms (warmup) | 7730 ops/ms (warmup) | 7542 ops/ms (warmup) | 6515 ops/ms (warmup) | 8030 ops/ms (warmup) | 7357 ops/ms (warmup) | 8272 ops/ms (warmup) | 8260 ops/ms (warmup) | 8147 ops/ms (warmup) | 8370 ops/ms (warmup) | 8360 ops/ms (warmup) | 8352 ops/ms (warmup) | 8405 ops/ms (warmup) | 8022 ops/ms | 8342 ops/ms | 8357 ops/ms | 8190 ops/ms | 7177 ops/ms | 8270 ops/ms | 8250 ops/ms | 8337 ops/ms | 8372 ops/ms | 8325 ops/ms | 8267 ops/ms | 8330 ops/ms | 8090 ops/ms | 8387 ops/ms | 7745 ops/ms |
+[ ~8164 ops/ms ]
+2 ms | 1 ms | 1 ms | 1 ms | 1 ms | 2 ms | 1 ms | 5 ms | 2 ms | 1 ms | 2 ms | 2 ms | 1 ms | 2 ms | 2 ms |
+[ ~2 ms ]
+
+[#2] Running: AbstractFactory
+6765 ops/ms (warmup) | 7560 ops/ms (warmup) | 7687 ops/ms (warmup) | 7825 ops/ms (warmup) | 7290 ops/ms (warmup) | 7920 ops/ms (warmup) | 8132 ops/ms (warmup) | 7963 ops/ms (warmup) | 7902 ops/ms (warmup) | 7758 ops/ms (warmup) | 7902 ops/ms (warmup) | 7272 ops/ms (warmup) | 7772 ops/ms (warmup) | 7652 ops/ms (warmup) | 7787 ops/ms (warmup) | 7987 ops/ms (warmup) | 8050 ops/ms (warmup) | 8090 ops/ms (warmup) | 8067 ops/ms (warmup) | 8070 ops/ms (warmup) | 8167 ops/ms | 7377 ops/ms | 7945 ops/ms | 7797 ops/ms | 7917 ops/ms | 7887 ops/ms | 8017 ops/ms | 8155 ops/ms | 8152 ops/ms | 8187 ops/ms | 8250 ops/ms | 7882 ops/ms | 8047 ops/ms | 8090 ops/ms | 7650 ops/ms |
+[ ~7968 ops/ms ]
+3 ms | 3 ms | 3 ms | 3 ms | 2 ms | 1 ms | 2 ms | 2 ms | 2 ms | 2 ms | 2 ms | 2 ms | 2 ms | 4 ms | 3 ms |
+[ ~2 ms ]
+
+[#3] Running: SimpleFactory
+5410 ops/ms (warmup) | 5828 ops/ms (warmup) | 5341 ops/ms (warmup) | 5860 ops/ms (warmup) | 5710 ops/ms (warmup) | 5925 ops/ms (warmup) | 6015 ops/ms (warmup) | 5979 ops/ms (warmup) | 5832 ops/ms (warmup) | 5690 ops/ms (warmup) | 5842 ops/ms (warmup) | 5588 ops/ms (warmup) | 5808 ops/ms (warmup) | 5873 ops/ms (warmup) | 5935 ops/ms (warmup) | 5862 ops/ms (warmup) | 5956 ops/ms (warmup) | 4506 ops/ms (warmup) | 5818 ops/ms (warmup) | 5490 ops/ms (warmup) | 5512 ops/ms | 5111 ops/ms | 4405 ops/ms | 5218 ops/ms | 5266 ops/ms | 4372 ops/ms | 3787 ops/ms | 5765 ops/ms | 5951 ops/ms | 5771 ops/ms | 5766 ops/ms | 5086 ops/ms | 4816 ops/ms | 5872 ops/ms | 5805 ops/ms |
+[ ~5233 ops/ms ]
+3 ms | 2 ms | 3 ms | 4 ms | 4 ms | 4 ms | 3 ms | 4 ms | 2 ms | 2 ms | 3 ms | 2 ms | 3 ms | 4 ms | 3 ms |
+[ ~3 ms ]
+
+[#4] Running: NonReflectionFactory
+3734 ops/ms (warmup) | 4136 ops/ms (warmup) | 4096 ops/ms (warmup) | 4125 ops/ms (warmup) | 4095 ops/ms (warmup) | 4086 ops/ms (warmup) | 4176 ops/ms (warmup) | 3665 ops/ms (warmup) | 4135 ops/ms (warmup) | 4070 ops/ms (warmup) | 4092 ops/ms (warmup) | 4093 ops/ms (warmup) | 4085 ops/ms (warmup) | 3814 ops/ms (warmup) | 4011 ops/ms (warmup) | 4088 ops/ms (warmup) | 4091 ops/ms (warmup) | 4078 ops/ms (warmup) | 4120 ops/ms (warmup) | 4082 ops/ms (warmup) | 4043 ops/ms | 4070 ops/ms | 4081 ops/ms | 4078 ops/ms | 4076 ops/ms | 4096 ops/ms | 4158 ops/ms | 4186 ops/ms | 4102 ops/ms | 4092 ops/ms | 4087 ops/ms | 4046 ops/ms | 4055 ops/ms | 4090 ops/ms | 4082 ops/ms |
+[ ~4089 ops/ms ]
+2 ms | 2 ms | 3 ms | 3 ms | 2 ms | 3 ms | 2 ms | 6 ms | 3 ms | 3 ms | 5 ms | 2 ms | 3 ms | 2 ms | 3 ms |
+[ ~3 ms ]
+
+[#5] Running: ReflectionFactory
+3651 ops/ms (warmup) | 3756 ops/ms (warmup) | 3940 ops/ms (warmup) | 3422 ops/ms (warmup) | 3931 ops/ms (warmup) | 4214 ops/ms (warmup) | 4068 ops/ms (warmup) | 4163 ops/ms (warmup) | 3832 ops/ms (warmup) | 3579 ops/ms (warmup) | 3699 ops/ms (warmup) | 4147 ops/ms (warmup) | 4093 ops/ms (warmup) | 3610 ops/ms (warmup) | 3724 ops/ms (warmup) | 3613 ops/ms (warmup) | 3266 ops/ms (warmup) | 3232 ops/ms (warmup) | 3292 ops/ms (warmup) | 3444 ops/ms (warmup) | 3432 ops/ms | 3357 ops/ms | 3969 ops/ms | 3437 ops/ms | 3646 ops/ms | 3852 ops/ms | 3253 ops/ms | 3485 ops/ms | 3504 ops/ms | 3247 ops/ms | 2827 ops/ms | 3084 ops/ms | 3734 ops/ms | 3477 ops/ms | 3325 ops/ms |
+[ ~3441 ops/ms ]
+5 ms | 5 ms | 5 ms | 7 ms | 4 ms | 3 ms | 4 ms | 5 ms | 4 ms | 4 ms | 9 ms | 4 ms | 4 ms | 4 ms | 4 ms |
+[ ~5 ms ]
